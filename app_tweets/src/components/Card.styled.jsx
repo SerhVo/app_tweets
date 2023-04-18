@@ -39,11 +39,15 @@ export const Bg_img = styled.img`
   `;
 
 export const Avatar = styled.img`  
+  width: 62px;
+height: 62px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 z-index: 10;
-  
+border: 8px solid #EBD8FF;  
+box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06), inset 0px -2.19582px 4.39163px #AE7BE3, inset 0px 4.39163px 3.29372px #FBF8FF;
 `;
 
 export const Line = styled.img`  
@@ -51,7 +55,7 @@ export const Line = styled.img`
     height: 8px;
     background: #EBD8FF;
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF;
-      margin-top: -54px;
+      margin-top: -40px;
     margin-bottom: 36px;
 `;
 
@@ -88,9 +92,9 @@ text-transform: uppercase;
 color: #373737;
   
   width: 196px;
-height: 50px;
-margin-bottom: 36px;
-display: flex;
+    height: 50px;
+    margin-bottom: 36px;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -99,6 +103,11 @@ box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
 border-radius: 10.3108px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  
+&:hover {
+    scale: 1.1;
+    background-color: #bddbf0;
+  }
 
   &:focus {
     outline: none;

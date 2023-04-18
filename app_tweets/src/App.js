@@ -1,11 +1,11 @@
-import './App.css';
-import Card from './components/card';
-
+import React from 'react';
+import UserList from "./components/UserList";
 
 function App() {
-    return (
-        <Card />
-    );
-}
-
+  return (
+    <div>
+      <UserList />
+      </div>
+  );
+};
 export default App;
